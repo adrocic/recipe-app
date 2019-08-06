@@ -1,9 +1,9 @@
 import React from 'react'
-import style from './recipe.module.css'
+import style from './RecipeCard.module.css'
 
-const Recipe = ({title, calories, image}) => {
+const RecipeCard = ({title, calories, image}) => {
     return (
-        <div className={style.recipe}>
+        <div className={style.recipeCard}>
             <h1>{title}</h1>
             <p>Calories: {Math.floor(calories)}</p>
             <img src={image} alt=""/>
@@ -11,4 +11,4 @@ const Recipe = ({title, calories, image}) => {
     )
 }
 
-export default Recipe
+export default RecipeCard
